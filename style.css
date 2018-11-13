@@ -1,0 +1,63 @@
+
+body{
+margin:0;
+padding:0;
+
+background : linear-gradient(to right,rgb(60, 54, 104),rgb(64, 19, 82) )
+
+}
+.skew{
+
+border:1px solid red !important ;
+transition:0.5s linear;
+
+animation-name: skew;
+animation-duration: 1s;
+
+
+}
+@keyframes skew{
+
+    50% { transform: skewY(10deg);  }
+
+   100% {transform: skewY(-10deg); }
+}
+
+form{
+
+    margin-top:40px;
+    width:300px;
+ 
+    position: relative;
+     float:right;
+     right:250px;
+     color:white;
+     font-family: arial;
+     font-size: 16px;
+   
+}
+
+.form-row{
+   
+    display: block;
+
+    padding: 10px 0;
+}
+
+.form-inp{
+
+    display: block;
+    width:100%;
+    height:35px;
+    margin: 10px 0;
+    background: rgb(46, 45, 65);
+    color:white;
+    border:1px solid rgb(9, 2, 24);
+    border-radius: 5px;
+    font-size:16px;
+    padding-left:20px 
+
+}
+.form-inp:focus{outline-width: 0}
+
+textarea{height:50px !important ; max-width: 100%;}
